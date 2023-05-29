@@ -237,7 +237,12 @@ SpatialFeaturePlot(lung.moransi,  features = Least_Moransi_Marker, ncol = 3, alp
 ```
 
 #### Method II: Variogram
-Variogram analyzes spatial transcriptomics data as a mark point process and computes a 'variogram' that finds genes whose expression level is affected by their spatial position. More specifically, this procedure computes gamma(r) values, which measure the dependence between two points separated by a "r" distance. To save time, we utilize an r-value of '5' by default in these studies and only compute these values for variable genes (variation calculated independently of spatial location).
+Variogram analyzes spatial transcriptomics data as a mark point process and computes a 'variogram' 
+that finds genes whose expression level is affected by their spatial position. More specifically, 
+this procedure computes gamma(r) values, which measure the dependence between two points separated by a "r" distance.
+To save time, we utilize an r-value of '5' by default in these studies and only compute these values for 
+variable genes (variation calculated independently of spatial location).
+
 ```{r}
 #Perform variogram
 lung.variogram <- FindSpatiallyVariableFeatures(
