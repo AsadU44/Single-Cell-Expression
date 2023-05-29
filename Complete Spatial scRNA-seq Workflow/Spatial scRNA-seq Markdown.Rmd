@@ -195,7 +195,8 @@ DoHeatmap(lung.final, features = top10$gene) + NoLegend() +
 
 ### Identify spatially variable genes
 #### Method I: Moran's I
-Moran's I is a global statistic that assesses the relationship between local observed gene expression values and the average of nearby values. Moran's I can be seen as a spatial autocorrelation metric, analogous to the Pearson correlation coefficient in spatial statistics.
+Moran's I is a global statistic that assesses the relationship between local observed gene expression values and the average of nearby values.
+Moran's I can be seen as a spatial autocorrelation metric, analogous to the Pearson correlation coefficient in spatial statistics.
 
 ```{r}
 #Perform Moran's I
